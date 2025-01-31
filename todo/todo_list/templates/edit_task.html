@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Task{% endblock %}
+
+{% block content %}
+  <h1>Edit Task</h1>
+  <div class="form-container">
+    <form method="post" action="{% url 'todo_list:update_task' task.pk %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="submit-button" type="submit">Save Changes</button>
+    </form>
+  </div>
+{% endblock %}

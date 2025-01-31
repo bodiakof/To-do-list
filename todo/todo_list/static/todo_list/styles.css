@@ -1,0 +1,93 @@
+.sidebar {
+    float: left;
+    width: 20%;
+    background-color: #f8f8f8;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    height: 100vh;
+    margin: 0;
+}
+
+.content {
+    float: left;
+    width: 80%;
+    padding: 20px;
+    margin: 0;
+    overflow: auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.add-button {
+    margin-bottom: 20px;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.task, .tag {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.task.done {
+    border-left: 5px solid green;
+    background-color: #e6ffe6;
+}
+
+.task.not-done {
+    border-left: 5px solid red;
+    background-color: #ffe6e6;
+}
+
+.task .buttons, .tag .buttons {
+    margin-top: 10px;
+}
+
+.buttons a {
+    margin-right: 10px;
+    color: white;
+    background-color: #007bff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.tag-list {
+    margin-top: 20px;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

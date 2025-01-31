@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}TODO list{% endblock %}</title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'todo_list/styles.css' %}">
+</head>
+<body>
+<div class="sidebar">
+  <a href="{% url 'todo_list:home' %}">Home</a>
+  <a href="{% url 'todo_list:tag_list' %}">Tags</a>
+</div>
+
+<div class="content">
+  {% block content %}
+
+  {% endblock %}
+</div>
+</body>
+</html>
