@@ -1,6 +1,7 @@
 from django.test import TestCase
 from django.urls import reverse
-from .models import Task, Tag
+
+from todo_list.models import Task, Tag
 
 
 class TaskModelTests(TestCase):

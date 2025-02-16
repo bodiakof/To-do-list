@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Task, Tag
-from .forms import TaskForm, TagForm
+
+from todo_list.models import Task, Tag
+from todo_list.forms import TaskForm, TagForm
+
 
 def home(request):
     tasks = Task.objects.all().order_by("is_done", "-created_at")
